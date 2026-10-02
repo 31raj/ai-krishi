@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@theme {
+  --color-agri-deep: #0f5132;
+  --color-agri-fresh: #3fbf6f;
+  --color-agri-cream: #fff8ef;
+  --color-agri-charcoal: #0f1722;
+  --color-agri-warn: #f6c84c;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  @apply bg-agri-cream text-agri-charcoal font-sans;
+}
+
+.app-shell {
+  min-height: 100vh;
+}
+
+.card {
+  @apply bg-white rounded-xl p-6 shadow-md;
+}
+
+.muted {
+  @apply text-slate-500;
+}
+
+.btn-primary {
+  @apply inline-flex items-center gap-2 bg-agri-deep text-white px-4 py-2 rounded-lg shadow-sm hover:opacity-95;
+}
